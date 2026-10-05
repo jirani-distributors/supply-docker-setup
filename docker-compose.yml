@@ -1,0 +1,9 @@
+services:
+  supply:
+    image: php:8.3-apache
+    env_file:
+      - .env
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
